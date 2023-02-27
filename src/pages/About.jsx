@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Profile from '../components/Profile'
 function About() {
   return (
     <div>
-      <h1>This is about page.</h1>
+      <Profile />
     </div>
   )
 }
