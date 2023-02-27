@@ -1,7 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
+import BookForm from "./BookForm";
 function HomeComp() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
     return ( 
          <div className="relative h-screen overflow-hidden bg-indigo-900">
+        
         <img src="src\static\books.jpg" className="absolute object-cover w-full h-full" />
         <div className="absolute inset-0 bg-black opacity-25">
         </div>
@@ -26,11 +37,18 @@ function HomeComp() {
             <p className="flex flex-col items-center max-w-lg mt-6 text-lg font-extrabold text-center text-white">
               Book a book now 🤣
             </p>
-            <a href="#" className="block px-4 py-3 mt-10 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900">
+            <div className="pt-10">
+            <button 
+            onClick={handleOpenModal}
+        className="font-bold bg-transparent border-2 text-white py-4 px-10 rounded hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-10">
               Book
-            </a>
+            </button>
+            
+            </div>
+           
           </div>
         </div>
+        <BookForm isOpen={isModalOpen} onClose={handleCloseModal} />
       </div>
      );
 }
