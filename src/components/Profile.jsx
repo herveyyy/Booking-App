@@ -15,7 +15,7 @@ function Profile() {
           Herbitok 
         </h1>
         <p className="text-sm text-gray-600 text-center">
-          BS-Secret
+          BS - Information Technology
         </p>
       </div>
       

@@ -13,7 +13,7 @@ function Button({text, bg, padding}) {
   };
   return (
     <div>
-      {/* <Link to='/login' /> */}
+      
       <button
       onClick={handleLoginButtonClick}
         className={`

@@ -12,7 +12,6 @@ function HomeComp() {
     };
     return ( 
          <div className="relative h-screen overflow-hidden bg-indigo-900">
-        
         <img src="src\static\books.jpg" className="absolute object-cover w-full h-full" />
         <div className="absolute inset-0 bg-black opacity-25">
         </div>
