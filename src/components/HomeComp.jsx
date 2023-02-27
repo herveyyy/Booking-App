@@ -12,7 +12,7 @@ function HomeComp() {
     };
     return ( 
          <div className="relative h-screen overflow-hidden bg-indigo-900">
-        <img src="src\static\books.jpg" className="absolute object-cover w-full h-full" />
+        <img src="https://pbs.twimg.com/media/EL84j20XkAEhyf-?format=jpg&name=4096x4096" className="absolute object-cover w-full h-full" />
         <div className="absolute inset-0 bg-black opacity-25">
         </div>
         <header className="absolute top-0 left-0 right-0 z-20">
