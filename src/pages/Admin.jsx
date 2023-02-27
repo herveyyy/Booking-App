@@ -1,9 +1,11 @@
-import React from "react";
+
+import  React from "react";
+import DataTable from "../components/Table";
+
 
 function Admin() {
     return (<div>
-
-        <h1>ADmin</h1>
+<DataTable />
     </div>  );
 }
 
