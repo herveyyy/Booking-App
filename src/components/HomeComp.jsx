@@ -10,6 +10,7 @@ function HomeComp() {
             <div className="items-center justify-center md:flex">
               <div className="flex items-center justify-between">
                 <div className="md:hidden">
+                
                 </div>
               </div>
               <div className="items-center hidden md:flex">
