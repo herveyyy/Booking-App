@@ -3,7 +3,7 @@ import React from "react";
 
 function Profile() {
     return (  
-    <div className="pb-80">
+    <div className="pb-52">
       <div className="relative h-40">
         <img className="absolute h-full w-full object-cover" src="https://res.cloudinary.com/practicaldev/image/fetch/s--a0VqOvf_--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4a6t7pmm323uaz9rv1rf.png"/>
       </div>
@@ -41,13 +41,11 @@ function Profile() {
         
       </div>
       <div className="mt-6 pt-3 flex flex-wrap mx-6 border-t justify-center">
-      <p className="w-1/2 text-justify font-normal"> Hervey Geralph Cabig Mapano was a Filipino Student from Liceo De Cagayan University and a aspiring Programmer, Game Developer and bunch of nonesense things. Anyways, I wrote my own biography so I will dectate what you should know about me. hehe. So Hervey was born in March 9, 2002 and raised on Cagayan de Oro City, Misamis Oriental, Philippines. Hervey is currently living with his parents. Hervey likes to play video games though he is so bad in anygames he played. Get Good kid. Because of playing games he realize that "why not I make my own game - hervey, 2010 ". Because of that, He began to play more games. He always absent in his junior highschool years just to play that crappy dota 2 game and then when he is on Senior highschool he promise to himself not to play games anymore and focus on learning. but that didnt work because he continue to play games but we have also some character development in here because he doesnt skip school anymore.</p>
+      <p className="
+      pt-3 w-1/2 text-justify font-normal"> Hervey Geralph Cabig Mapano was a Filipino Student from Liceo De Cagayan University and a aspiring Programmer, Game Developer and bunch of nonesense things. Anyways, I wrote my own biography so I will dectate what you should know about me. hehe. So Hervey was born in March 9, 2002 and raised on Cagayan de Oro City, Misamis Oriental, Philippines. Hervey is currently living with his parents. Hervey likes to play video games though he is so bad in anygames he played. Get Good kid. Because of playing games he realize that "why not I make my own game - hervey, 2010 ". Because of that, He began to play more games. He always absent in his junior highschool years just to play that crappy dota 2 game and then when he is on Senior highschool he promise to himself not to play games anymore and focus on learning. but that didnt work because he continue to play games but we have also some character development in here because he doesnt skip school anymore.</p>
       </div>
-      <div className="mt-6 pt-3 flex flex-wrap mx-6 border-t justify-center">
-      <div className=" text-sm font-bold mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 bg-indigo-600 text-indigo-100 cursor-default">
-          Created by Hervey Geralph C. Mapano
-        </div>
-        </div>
+      
+        
       </div>
    
     );

@@ -6,6 +6,7 @@ function Home() {
   return (
     <div>
       <HomeComp />
+      
     </div>
   )
 }
