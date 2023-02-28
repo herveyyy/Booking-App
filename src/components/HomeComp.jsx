@@ -28,12 +28,12 @@ function HomeComp() {
             </div>
           </nav>
         </header>
-        <div className="container relative z-10 flex items-center w-4/5 py-16 mx-auto my-24 border-4 border-white rounded-lg md:my-32">
+        <div className="container relative z-10 flex items-center w-4/5 py-16 mx-auto my-24 border-2  backdrop-blur rounded-lg md:my-32">
           <div className="relative z-10 flex flex-col items-center justify-between w-full">
-            <p className="flex flex-col items-center text-6xl font-extrabold text-center text-white md:text-8xl">
+            <p className="flex flex-col items-center text-6xl font-extrabold text-center text-white md:text-8xl uppercase">
               Book Booker
             </p>
-            <p className="flex flex-col items-center max-w-lg mt-6 text-lg font-extrabold text-center text-white">
+            <p className="flex flex-col items-center max-w-lg mt-6 text-lg  text-center text-white font-normal">
               Book a book now 🤣
             </p>
             <div className="pt-10">
