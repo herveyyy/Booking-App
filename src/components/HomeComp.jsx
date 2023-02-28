@@ -39,7 +39,7 @@ function HomeComp() {
             <div className="pt-10">
             <button 
             onClick={handleOpenModal}
-        className="font-bold bg-transparent border-2 text-white py-4 px-10 rounded hover:border-gray-900 hover:border-1 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-10">
+        className="font-bold bg-gray-800 border-2 text-white py-4 px-10 rounded border-gray-900 hover:border-1 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-10">
               Book
             </button>
             
