@@ -1,16 +1,36 @@
 import React,{ useState } from "react";
+import {
+  addDoc,
+  collection
+} from 'firebase/firestore';
+import { database } from "../../firebaseConfig";
 
 function BookForm({ isOpen, onClose }) {
-    const [name, setName] = useState("");
+    const [bookName, setBookName] = useState("");
     const [borrowersName, setBorrowersName] = useState("");
-    const [address, setAddress] = useState("");
+    const [emailAddress, setEmailAddress] = useState("");
     const [contactNumber, setContactNumber] = useState("");
-
+    const databaseRef = collection(database, 'Borrower');
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log({ name, borrowersName, address, contactNumber });
+        addData();
+        console.log({ bookName, borrowersName, emailAddress, contactNumber }, " added");
+        alert("Data added to firestore");
         onClose();
+        setBookName("");
+        setBorrowersName("");
+        setEmailAddress("");
+        setContactNumber("");
       };
+
+      const addData = () => {
+        addDoc(databaseRef, {
+          bookName: bookName,
+          borrowersName: borrowersName,
+          emailAddress: emailAddress,
+          contactNumber: contactNumber
+        })
+    }
     
   return (
     <>
@@ -51,8 +71,9 @@ function BookForm({ isOpen, onClose }) {
                     type="text"
                     className="border border-gray-400 p-2 w-full rounded"
                     placeholder="Enter book name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={bookName}
+                    onChange={(e) => setBookName(e.target.value)}
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -69,6 +90,7 @@ function BookForm({ isOpen, onClose }) {
                     placeholder="Enter borrower's name"
                     value={borrowersName}
                     onChange={(e) => setBorrowersName(e.target.value)}
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -83,8 +105,9 @@ function BookForm({ isOpen, onClose }) {
                     type="text"
                     className="border border-gray-400 p-2 w-full rounded"
                     placeholder="Enter address"
-                    value={address}
-                    onChange={(e) => setAddress(e.target.value)}
+                    value={emailAddress}
+                    onChange={(e) => setEmailAddress(e.target.value)}
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -102,6 +125,7 @@ function BookForm({ isOpen, onClose }) {
                     placeholder="Enter contact number"
                     value={contactNumber}
                     onChange={(e) => setContactNumber(e.target.value)}
+                    required
                   />
                 </div>
                 <div className="text-right">
